@@ -10,7 +10,7 @@ $(OBJS): $(SRCS)
 	valac  -o $@ $< --gir=$(GIR) --library=demo4 $(VALAC_FLAGS)
 
 $(TYPELIB): $(OBJS) $(GIR) $(SRCS)
-	g-ir-compiler -o $@ --shared-library=$(OBJS) --includedir /usr/share/gir-1.0 $(GIR)
+	g-ir-compiler -o $@ --shared-library=$(OBJS) $(GIR)
 
 clean:
 	rm -rf $(OBJS) $(TYPELIB) $(GIR) *.vapi
