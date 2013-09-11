@@ -3,8 +3,6 @@ namespace Demo4
 {
     public class Foo : GLib.Object
     {
-        public Foo() {}
-
         public virtual void bar()
         {
             message("demo4.Foo.bar()");

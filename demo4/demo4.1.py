@@ -1,4 +1,3 @@
-from gi.repository import GObject
 from gi.repository import Demo4
 
 class Foo2(Demo4.Foo):
