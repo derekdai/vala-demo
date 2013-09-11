@@ -1,2 +1,6 @@
 demo*/demo?
 *.mp4
+*.vapi
+*.gir
+*.typelib
+*.so
